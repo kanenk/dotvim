@@ -20,3 +20,10 @@ set completeopt=menuone,longest,preview
 " Activation de la barre de statut de fugitive
 set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+
+" Affichage des numéros de ligne
+set number
+highlight LineNr ctermbg=blue ctermfg=gray
+
+" Surligne la colonne du dernier caractère autorisé par textwidth
+set cc=+1
